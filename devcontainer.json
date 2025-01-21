@@ -1,0 +1,4 @@
+{
+    "name": "python uv1",
+    "dockerFile": "Dockerfile"
+}

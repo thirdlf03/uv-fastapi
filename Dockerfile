@@ -14,6 +14,8 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh && \
 # Set working directory
 WORKDIR /opt
 
+RUN mkdir /workspace
+
 # Copy requirements
 COPY requirements.txt requirements.txt
 
