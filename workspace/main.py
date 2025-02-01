@@ -16,6 +16,7 @@ def hello():
         return {"200": "hello"}
     except HTTPException:
         return {"500": "error"}
+        
 ic(hello())
 
 @app.post("/")
