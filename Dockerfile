@@ -17,10 +17,8 @@ WORKDIR /opt
 RUN mkdir /workspace
 
 # Copy requirements
-COPY requirements.txt requirements.txt
+COPY pyproject.toml .
 
 # Create virtual environment and install dependencies
 RUN export PATH="$HOME/.local/bin:$PATH" && \
-    uv venv && \
-    . .venv/bin/activate && \
-    uv pip install -r requirements.txt
+    uv sync
